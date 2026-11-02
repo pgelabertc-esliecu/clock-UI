@@ -33,12 +33,20 @@ export default class Timer extends HTMLElement {
         inputs.forEach((input) => {
           input.classList.remove("current-interval");
         });
+
+        this.playAlarmSound();
+
         this.dispatchEvent(new CustomEvent("stop", { bubbles: true }));
       }
 
       time.dateTime = `PT${ms / 1000}S`;
       time.textContent = new Date(ms).toISOString().slice(11, 22);
     };
+  }
+
+  playAlarmSound() {
+    const audio = new Audio('https://assets.mixkit.co/active_storage/sfx/2869/2869-preview.mp3');
+    audio.play();
   }
 
   static get observedAttributes() {

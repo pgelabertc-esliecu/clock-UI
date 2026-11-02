@@ -1,12 +1,13 @@
 {
   "name": "clock",
   "version": "1.0.0",
-  "scripts": {
+ "scripts": {
     "build": "vite build",
     "dev": "vite",
     "lint": "eslint .",
     "format": "prettier . --check",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "vite preview"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

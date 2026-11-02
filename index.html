@@ -4,18 +4,17 @@
     <meta charset="UTF-8" />
     <title>Time</title>
     <link rel="stylesheet" href="./src/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <nav>
       <ul>
-        <li><a href="#clock">Clock</a></li>
-        <li><a href="#alarm">Alarm</a></li>
-        <li><a href="#stopwatch">Stopwatch</a></li>
-        <li><a href="#timer">Timer</a></li>
+        <li><a href="#clock"><span class="material-icons">schedule</span> Clock</a></li>
+        <li><a href="#alarm"><span class="material-icons">alarm</span> Alarm</a></li>
+        <li><a href="#stopwatch"><span class="material-icons">timer</span> Stopwatch</a></li>
+        <li><a href="#timer"><span class="material-icons">hourglass_bottom</span> Timer</a></li>
       </ul>
     </nav>
     <main>
@@ -28,7 +27,7 @@
         <x-alarm>
           <template>
             <section class="alarms">
-              <input type="time" min="00:00" max="23:59" step="1" />
+              <input type="time" class="time-input" min="00:00" max="23:59" step="1" />
               <section class="controls">
                 <button class="start material-icons">alarm_on</button>
                 <button class="pause material-icons">alarm_off</button>
